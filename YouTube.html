@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/video.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="">
     <title>YouTube</title>
 </head>
@@ -23,28 +24,65 @@
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-btn">
                 <img class="magnify" src="header icons/magnifying glass.png" alt="">
+                <div class="tooltip">Search</div>
             </button>
             <button class="mic-btn">
                 <img class="mic" src="header icons/mic.png" alt="">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
-            <img class="vid-cam" src="header icons/video-camera.png" alt="">
+            <div class="vid-cam-container">
+                <img class="vid-cam" src="header icons/video-camera.png" alt="">
+                <div class="tooltip">Create</div>
+            </div>
+            
             <img class="dot-menu" src="header icons/dots-menu.png" alt="">
             <img class="bell" src="header icons/bell.png" alt="">
             <img class="profile-pic" src="header icons/profile pic.jpg" alt="">
+            <div class="notification">3</div>
         </div>
     </div>
     
+    <div class="sidebar">
+        <div class="sidebar-box">
+            <img class="Home-img" src="images/sidebarhome.png" alt="">
+            <div class="Home">Home</div>
+        </div>
+        <div class="sidebar-box">
+            <img class="Explore-img" src="images/sidebarexplore.png" alt="">
+            <div class="Home">Explore</div>
+        </div>
+        <div class="sidebar-box">
+            <img class="shorts-img" src="Images/sidebarshorts.png" alt="">
+            <div class="Home">Shorts</div>
+        </div>
+        <div class="sidebar-box">
+            <img class="subscription-img" src="Images/sidebarsubscription.png" alt="">
+            <div class="Home">Subscription</div>
+        </div>
+        <div class="sidebar-box">
+            <img class="library-img" src="Images/sidebarlibrary.png" alt="">
+            <div class="Home">Library</div>
+        </div>
+    </div>
     
     <div class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/yt-img2.webp" alt="">
+                <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
-                        <img class="profile-picture" src="images/logoNetflix.jpg" alt="">
+                    <img class="profile-picture" src="images/logoNetflix.jpg" alt="">
+                    <div class="mini-profile">
+                        <img class="mini-profile-picture" src="images/logoNetflix.jpg" alt="">
+                        <div class="mini-profile-info">
+                            <div class="profile-name">Netflix</div>
+                            <div class="subscribers">15M Subscribers</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="video-info">
                         <p class="video-title">
@@ -62,6 +100,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                     <img class="thumbnail" src="images/yt-img1.webp" alt="">
+                    <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -83,6 +122,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/yt-img2.webp" alt="">
+                <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -104,6 +144,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                     <img class="thumbnail" src="images/yt-img1.webp" alt="">
+                    <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -125,6 +166,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/yt-img2.webp" alt="">
+                <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -146,6 +188,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                     <img class="thumbnail" src="images/yt-img1.webp" alt="">
+                    <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">

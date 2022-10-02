@@ -9,8 +9,9 @@ input{
 
 .thumbnail-row{
     margin-bottom: 10px;
-    width: 300px;
+    width: 270px;
     height: 168.33px;
+    position: relative;
 }
 
 .video-info-grid{
@@ -19,10 +20,13 @@ input{
 }
 
 .channel-picture{
+    position: relative;
     vertical-align: top;
 }
 
 .profile-picture{
+    position: relative;
+    cursor: pointer;
     border-radius: 25px;
     object-fit: cover;
     object-position: center;
@@ -57,4 +61,63 @@ input{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 50px;
+}
+
+.video-time{
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 2px;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    top: 124px;
+    opacity: 0.7;
+}
+
+.mini-profile{
+    position: absolute;
+    width: 210px;
+    height: 68px;
+    border: none;
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, Arial;
+    border-radius: 4px;
+    background-color: white;
+    bottom: -32px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.profile-picture:hover.mini-profile{
+    opacity: 1;
+}
+
+.mini-profile-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 8px;
+}
+
+.mini-profile-picture{
+    margin: 5px 8px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+}
+
+.profile-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom:2px;
+}
+
+.subscribers{
+    font-size: 14px;
+    color: rgb(104, 103, 103);
 }

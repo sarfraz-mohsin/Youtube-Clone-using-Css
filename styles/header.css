@@ -2,6 +2,13 @@
     height: 55px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom: 1px solid rgb(219, 216, 216);
+    z-index: 100;
 }
 
 .left-section{
@@ -44,11 +51,45 @@
 }
 
 .search-btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
     height: 38px;
     width: 60px;
     background-color: rgb(255, 255, 250);
     border: 1px solid lightgray;
     margin-left: -1px;
+}
+
+.search-btn, 
+.mic-btn,
+.vid-cam-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-btn .tooltip,
+.mic-btn .tooltip,
+.vid-cam-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    bottom: -30px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.mic-btn:hover .tooltip,
+.vid-cam-container:hover .tooltip{
+    opacity: 1;
 }
 
 .magnify{
@@ -58,6 +99,7 @@
 }
 
 .mic-btn{
+    position: relative;
     height: 38px;
     margin-left: 10px;
     border: none;
@@ -77,8 +119,10 @@
     align-items: center;
     margin-right: 24px;
     flex-shrink: 0;
-
+    position: relative;
 }
+
+
 
 .vid-cam{
     height: 20px;
@@ -97,4 +141,16 @@
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
+}
+
+.notification{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(221, 20, 20);
+    padding: 2px 5px;
+    border-radius: 25px;
+    font-size: 10px;
+    right: 54px;
+    top: 15px;
 }
